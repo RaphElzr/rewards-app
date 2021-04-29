@@ -1,0 +1,26 @@
+@import './variables';
+@import '~bootstrap/scss/bootstrap.scss';
+
+.modal {
+    padding-right: 5px !important;
+    padding: 0 5px;
+}
+
+.modal-dialog-centered {
+    margin: auto;
+}
+
+.modal-header {
+    padding: 0.5rem 1rem;
+    background-color: $color-primary;
+    align-items: center;
+
+    .modal-title {
+        color: $color-text-inverse;
+    }
+
+    button > span:first-child {
+        color: $color-text-inverse;
+        font-size: 2rem;
+    }
+}
