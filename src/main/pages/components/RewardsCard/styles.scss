@@ -1,0 +1,32 @@
+@import './../../../styles/variables';
+
+.RewardsCard {
+    width: 100%;
+    max-width: 1024px;
+    min-height: 280px;
+    margin: auto;
+    border: 2px solid $color-secondary;
+    margin-bottom: 3px;
+
+    .logo {
+        max-width: 100%;
+        max-height: 100%;
+        vertical-align: middle;
+    }
+
+    .details {
+        text-overflow: ellipsis;
+        width: 200ch;
+    }
+
+    .view-button {
+        max-width: 250px;
+        bottom: 0;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .RewardsCard {
+        text-align: center;
+    }
+}
