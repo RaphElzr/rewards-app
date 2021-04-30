@@ -11,11 +11,15 @@
     border: 2px solid $color-secondary;
     margin-bottom: 5px;
 
+    h4 {
+        font-weight: bold;
+        color: $color-secondary;
+        margin-bottom: 0.8rem;
+    }
+
     .details {
         color: $color-primary-light;
         font-weight: 500;
-        overflow: hidden;
-        max-width: 200ch;
     }
 
     .expiry-tag {
@@ -23,7 +27,7 @@
         position: absolute;
         right: 20px;
         top: 15px;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         line-height: 1rem;
 
     }

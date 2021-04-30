@@ -21,7 +21,7 @@ const RewardsCard = ({ rewards, onClick }) => {
     const renderExpiryNotice = (dateString) => {
         let daysDiff = common.daysDiff(dateString);
 
-        if (daysDiff > 0 && daysDiff <= config.EXPIRY_LIMIT) {
+        if (daysDiff >= 0 && daysDiff <= config.EXPIRY_LIMIT) {
             return (
                 <div><b>{labels.EXPIRES_IN + ' ' + daysDiff + ' ' + labels.DAYS}</b></div>
             );
@@ -44,7 +44,7 @@ const RewardsCard = ({ rewards, onClick }) => {
                     <Image src={image_url} alt={image_url} className='logo' />
                 </Col>
                 <Col className='pt-5 pb-2'>
-                    <h4 className='text-secondary'>{heading}</h4>
+                    <h4>{heading}</h4>
                     <div className='expiry-tag'>
                         {renderExpiry(rewards.usage_end_date)}
                     </div>
