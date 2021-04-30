@@ -2,16 +2,15 @@
     min-width: 300px !important;
     max-width: 600px !important;
 
-    .message {
-        white-space: pre-wrap;
-    }
-
     .modal-body {
         padding: 1rem 2rem;
     }
 
-    .modal-footer {
-        flex-direction: row;
-        flex-wrap: inherit;
+}
+
+@media all and (max-width: 576px) {
+    .RewardsModal {
+        text-align: center;
     }
 }
+

@@ -7,7 +7,7 @@ const Header = (props) => {
 
     return (
         <div className='Header'>
-            <h1>{title}</h1>
+            <h1 className='text-center text-primary'>{title}</h1>
         </div>
     );
 };

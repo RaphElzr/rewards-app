@@ -1,3 +1,9 @@
+@import './styles/variables';
+
+html {
+    font-size: 16px;
+}
+
 html,
 body,
 #root,
@@ -12,9 +18,23 @@ body {
         'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 14px;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 280px;
+}
+
+p {
+    margin-bottom: 0.8rem !important;
+}
+
+.flex-row {
+    flex: 1
 }

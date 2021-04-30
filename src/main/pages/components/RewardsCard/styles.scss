@@ -1,28 +1,56 @@
 @import './../../../styles/variables';
 
 .RewardsCard {
-    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
     max-width: 1024px;
     min-height: 280px;
-    margin: auto;
     border: 2px solid $color-secondary;
-    margin-bottom: 3px;
-
-    .logo {
-        max-width: 100%;
-        max-height: 100%;
-        vertical-align: middle;
-    }
+    margin-bottom: 5px;
 
     .details {
-        text-overflow: ellipsis;
-        width: 200ch;
+        color: $color-primary-light;
+        font-weight: 500;
+        overflow: hidden;
+        max-width: 200ch;
     }
 
-    .view-button {
-        max-width: 250px;
-        bottom: 0;
+    .expiry-tag {
+        text-align: right;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        font-size: 0.8rem;
+        line-height: 1rem;
+
     }
+
+    .expiry-tag-inline {
+        line-height: 1rem;
+        margin-bottom: 15px;
+    }
+
+    @media all and (max-width: 576px) {
+        .expiry-tag {
+            display: none;
+        }
+    }
+
+    @media all and (min-width: 576px) {
+        .expiry-tag-inline {
+            display: none;
+        }
+
+        .view-button {
+            max-width: 250px;
+            position: absolute;
+            bottom: 25px;
+        }
+    }
+
 }
 
 @media all and (max-width: 576px) {

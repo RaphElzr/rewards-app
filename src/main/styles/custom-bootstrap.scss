@@ -4,6 +4,15 @@
 .modal {
     padding-right: 5px !important;
     padding: 0 5px;
+    overflow-y: auto;
+}
+
+.modal-open {
+    overflow: auto;
+}
+
+.modal-open[style] {
+    padding-right: 0px !important;
 }
 
 .modal-dialog-centered {
