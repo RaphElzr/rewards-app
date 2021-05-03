@@ -11,7 +11,7 @@ const RewardsModal = ({ rewards, onClose }) => {
     const renderExpiryNotice = (dateString) => {
         let daysDiff = common.daysDiff(dateString);
 
-        if (daysDiff > 0 && daysDiff <= config.EXPIRY_LIMIT) {
+        if (daysDiff >= 0 && daysDiff <= config.EXPIRY_LIMIT) {
             return (
                 <p><b>{labels.EXPIRES_IN + ' ' + daysDiff + ' ' + labels.DAYS}</b></p>
             );
